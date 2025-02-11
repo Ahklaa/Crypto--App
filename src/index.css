@@ -1,7 +1,7 @@
 :root{
   --white : #FFF;
-  --primary : #61ECBC;
-  --black : #182339;
+  --primary : #f3b238;
+  --black : #3a070f;
 }
 html{
   font-size: 62.5%;
@@ -13,6 +13,7 @@ body{
   background-size: cover;
   min-height: 100vh;
   font-family: "Outfit", serif;
+  font-size: 2rem;
 }
 .container{
   max-width: 60rem;
@@ -37,4 +38,34 @@ body{
   background-color: var(--white);
   border-radius: 1rem;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.form,
+.field{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem
+}
+.form label{
+  color : var(--black)
+}
+.form select{
+  background-color: #ECEBEB;
+  border: none;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+.form [type ="submit"]{
+  border: none;
+  background-color: var(--primary);
+  padding: 1rem;
+  text-transform: uppercase;
+  font-weight: 900;
+  cursor: pointer;
+  margin-top: 2rem;
+  color: var(--black);
+  transition: background-color 300ms ease;
+}
+
+.form [type ="submit"]:hover{
+  background-color: #bd8827;
 }

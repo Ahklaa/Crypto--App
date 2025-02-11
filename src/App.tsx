@@ -1,3 +1,5 @@
+import SearchCriptoForm from "./components/SearchCriptoForm"
+
 function App() {
 
   return (
@@ -7,7 +9,7 @@ function App() {
           Cotizador de <span>Criptomonedas</span>
         </h1>
         <div className="content">
-          
+          <SearchCriptoForm/>
         </div>
       </div>
       
